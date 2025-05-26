@@ -12,7 +12,7 @@ This project implements a **Convolutional Neural Network (CNN)** in **PyTorch** 
 - 🧪 Train/Test split with `sklearn`
 - 🔄 Includes:
   - Convolutional & pooling layers
-  - Dropout for regularization
+  - Dropout for regularisation
   - Learning rate scheduler
   - Early stopping
 - 📈 Saves **accuracy/loss plots** with hyperparameters embedded in the filename
@@ -32,29 +32,26 @@ After downloading:
 1. Extract the folder `Pizza_Or_Not_Pizza_Dataset`.
 2. Place it in the root of this project directory like so:
 
+```text
 Pizza_Or_Not_Pizza_Dataset/
-|── pizza/
-
-| |── image1.jpg
-
-| |── ...
-
-|── not_pizza/
-
-|── image1.jpg
-
-|── ...
+├── pizza/
+│   ├── image1.jpg
+│   └── ...
+├── not_pizza/
+│   ├── image1.jpg
+│   └── ...
+```
 
 ---
 
 ## 📂 Project Structure
 
-|── src.py # Main training script
-
-|── Pizza_Or_Not_Pizza_Dataset/ # Image dataset (user must download separately)
-
-|── Plots/ # Directory where training plots are saved
-
+```text
+.
+├── src.py                        # Main training script
+├── Pizza_Or_Not_Pizza_Dataset/  # Image dataset (user must download separately)
+├── Plots/                        # Directory where training plots are saved
+```
 
 ---
 
@@ -111,7 +108,9 @@ Plots are saved like:
 Plots/Loss & Accuracy Plot (lr=0.000005, momentum=0.4, dropout=0.35).png
 ```
 Here’s a sample output plot:
-![Training Plot](Plots/PlotsLoss%20%26%20Accuracy%20Plot%20%28lr%3D0.001%2C%20momentum%3D0.9%2C%20dropout%3D0.5%29.png)
+<p align="center">
+  <img src="Plots/PlotsLoss%20%26%20Accuracy%20Plot%20%28lr%3D0.001%2C%20momentum%3D0.9%2C%20dropout%3D0.5%29.png" width="800" alt="Training Plot">
+</p>
 
 
 
